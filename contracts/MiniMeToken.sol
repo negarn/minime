@@ -333,7 +333,7 @@ contract MiniMeToken is Controlled {
         string _cloneTokenName,
         uint8 _cloneDecimalUnits,
         string _cloneTokenSymbol,
-        uint _snapshotBlock,
+        uint _snapshotBlock
         ) public returns(address) {
         if (_snapshotBlock == 0) _snapshotBlock = block.number;
         MiniMeToken cloneToken = tokenFactory.createCloneToken(
